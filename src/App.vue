@@ -1,29 +1,63 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+<div>
+  <Header/>
+  <div id="app" class="container">
+    <div class="d-fluid">
+      <Task/>
+      <List/>
+      <Stacks />
+    </div> 
   </div>
+  <Footer/>
+</div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
+import Task from './components/AddTask/index.vue';
+import List from './components/List/ListTasks.vue'
+import Stacks from './components/Stacks/Stacks.vue';
+import Header from './components/Header/Header.vue';
+import Footer from './components/Footer/Footer.vue';
+// @Component({
+//   components: {
+//     HelloWorld,
+//   },
+// })
+// export default class App extends Vue {
 
-@Component({
+  
+// }
+export default Vue.extend({
+  name: "App",
   components: {
-    HelloWorld,
-  },
-})
-export default class App extends Vue {}
+    Task,
+    List,
+    Stacks,
+    Header,
+    Footer
+},
+
+  data: () => ({
+    //
+  }),
+});
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+.container {
+  width: 600px;
+  margin: auto;
+  padding: 30px 0;
+  border-radius: 10px;
+
+  }
+.d-fluid {
+  display: flex;
+  flex-direction: column;
 }
+
+
+
 </style>
