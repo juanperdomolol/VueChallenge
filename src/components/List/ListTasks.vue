@@ -1,7 +1,7 @@
 <template>
   <div class="list-tasks">
     <span v-if="!filtersTask.length" class="empty-tasks">No task yet.</span>
-    <div v-else >
+    <div v-else class="exists-tasks">
     <div class="checks">
     <p>Check all todos</p>
     <input type="checkbox" :checked="!checksAll" :disabled="!checksAll" @change="changeItemStatus"/>
@@ -25,7 +25,7 @@ import TaskItem from "../shared/TaskItem/TaskItem.vue";
     TaskItem,
   },
 })
-export default class Tasks extends Vue {
+export default class ListTask extends Vue {
   
   get filtersTask(): Task[] {
     const options: any = {

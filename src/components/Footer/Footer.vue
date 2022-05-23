@@ -1,5 +1,5 @@
 <template>
-    <footer v-if="checksAll.length">
+    <footer v-if="checksAll.length" class="footer">
     <span class="title">Made 💻 by Juan <b>Valentin</b>  Perdomo Bonilla 👷‍♂️</span>
     </footer>
 </template>

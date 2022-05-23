@@ -1,5 +1,5 @@
 <template>
-  <header v-show="checksAll.length">
+  <header v-if="checksAll.length" class="head">
     <span class="title">Todo List Vuex, Typescript</span>
   </header>
 </template>
