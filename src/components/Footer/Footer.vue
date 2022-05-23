@@ -17,9 +17,8 @@ export default class Footer extends Vue {
 <style lang="scss" scoped>
 footer{
   box-sizing: border-box;
-    position: fixed;
-    display: flex;
-  height: 50px;
+  position: fixed;
+  display: flex;
   background-color: rgba(16, 97, 190, 0.933);
   bottom: 10px;
   left: 10px;

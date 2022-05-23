@@ -47,7 +47,6 @@ export default Vue.extend({
 <style lang="scss">
 
 .container {
-  width: 600px;
   margin: auto;
   padding: 30px 0;
   border-radius: 10px;
