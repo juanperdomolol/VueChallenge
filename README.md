@@ -1,6 +1,6 @@
 # Todo List app
 
-
+https://silver-macaron-71f5dc.netlify.app/
 You can create tasks, mark them as miss, see how many tasks you have and how many you have completed
 
 - Typescript
@@ -10,7 +10,7 @@ You can create tasks, mark them as miss, see how many tasks you have and how man
 -   Jest
 - ✨Magic ✨
 
-
+https://silver-macaron-71f5dc.netlify.app/
 ## Installation
 
 todolist requires [Node.js](https://nodejs.org/) v14+ to run.
